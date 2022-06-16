@@ -1,0 +1,14 @@
+<% layout('layouts/boilerplate.ejs') -%>
+    <div class="flex-fill d-flex flex-column align-items-center justify-content-center">
+        <h1 class="mb-5">Forgot password</h1>
+        <%- include("./partials/flash.ejs") %>
+    </div>
+    <div class="flex-fill d-flex align-items-center">
+        <form action="/forgot" class="flex-fill" method="POST">
+            <div class="d-flex flex-column justify-content-around">
+                <input type="text" name="email" placeholder="email" class="form-control"> <br>
+                <button class="btn btn-warning col-4 m-auto">Send</button>
+                <a href="/login" class="link-info mt-3"> Remember password?</a>
+            </div>
+        </form>
+    </div>

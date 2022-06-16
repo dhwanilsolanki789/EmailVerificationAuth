@@ -1,0 +1,16 @@
+<% layout('layouts/boilerplate.ejs') -%>
+    <div class="flex-fill">
+        <div>
+            <img src="/assets/profileDemo.png" alt="Profile">
+            <h1>Profile</h1>
+        </div>
+    </div>
+    <div class="flex-fill">
+        <h3>Welcome, <%= name %>
+        </h3>
+    </div>
+    <div class="flex-fill d-flex justify-content-center align-items-center">
+        <form class="mt-3" action="/logout" method="POST">
+            <button class="btn btn-danger">Logout</button>
+        </form>
+    </div>
